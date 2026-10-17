@@ -1,55 +1,31 @@
-# Mintlify Starter Kit
+# Sumbios O documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+Source of [docs.sumbios.ai](https://docs.sumbios.ai), built with [Mintlify](https://mintlify.com). Every push to `main` deploys.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Read [`AGENTS.md`](AGENTS.md) before editing: it holds the voice rules, the terminology and what may and may not be documented.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
-
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
-
-```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+## Run it locally
 
 ```
-npm i -g mint
+npx mint dev
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Then open http://localhost:3000. Node 20.17 or later.
+
+## Before you push
 
 ```
-mint dev
+python3 scripts/check_voice.py
+npx mint broken-links
 ```
 
-View your local preview at `http://localhost:3000`.
+## Layout
 
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+| Path | What |
+|---|---|
+| `docs.json` | Navigation, theme, brand colours, fonts, logos |
+| `style.css` | Brand v3 overrides: solid colours, no shadows, no gradients |
+| `index.mdx` | The landing page |
+| `getting-started/` … `notifications-and-conversations/` | One folder per area of the app, seeded from the in-app Help on 17 Oct 2026 |
+| `reference/` | Ask O commands, integrations |
+| `scripts/check_voice.py` | Fails on writing that breaks the voice rules |

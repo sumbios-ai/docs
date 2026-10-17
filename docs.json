@@ -1,72 +1,144 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Sumbios O",
+  "description": "How to use Sumbios O, an executive assistant for your whole network.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "primary": "#006E80",
+    "light": "#3CCCE2",
+    "dark": "#006E80"
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://sumbios.ai"
+  },
+  "favicon": "/favicon.svg",
+  "fonts": {
+    "family": "Host Grotesk",
+    "source": "/fonts/host-grotesk-latin.woff2",
+    "format": "woff2"
+  },
+  "appearance": {
+    "default": "system"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "label": "sumbios.ai",
+        "href": "https://sumbios.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open O",
+      "href": "https://o.sumbios.ai"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Docs",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "index",
+              "getting-started/welcome-to-o",
+              "getting-started/sign-in-and-get-started",
+              "getting-started/home",
+              "getting-started/assistant-anywhere",
+              "getting-started/search-and-header",
+              "getting-started/navigation",
+              "getting-started/field-mode",
+              "getting-started/help-changelog-feedback"
+            ]
+          },
+          {
+            "group": "Insights",
+            "pages": [
+              "insights/overview",
+              "insights/network-health",
+              "insights/connectors",
+              "insights/shared-introductions",
+              "insights/career-movements",
+              "insights/communities",
+              "insights/labels",
+              "insights/communication-memory"
+            ]
+          },
+          {
+            "group": "Network and Circles",
+            "pages": [
+              "network-and-circles/network-map",
+              "network-and-circles/search-members",
+              "network-and-circles/friends-and-sharing",
+              "network-and-circles/circles",
+              "network-and-circles/create-a-circle",
+              "network-and-circles/manage-a-circle",
+              "network-and-circles/export-or-delete-a-circle"
+            ]
+          },
+          {
+            "group": "Notes",
+            "pages": [
+              "notes-and-knowledge/notes",
+              "notes-and-knowledge/edit-notes",
+              "notes-and-knowledge/note-connections",
+              "notes-and-knowledge/wiki"
+            ]
+          },
+          {
+            "group": "Discovery",
+            "pages": [
+              "discovery/people-search",
+              "discovery/company-search",
+              "discovery/jobs",
+              "discovery/search-history"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "settings/appearance",
+              "settings/workspace",
+              "settings/goals",
+              "settings/resume",
+              "settings/connections",
+              "settings/chat",
+              "settings/network-map-settings",
+              "settings/billing-and-plans",
+              "settings/referrals-and-credits"
+            ]
+          },
+          {
+            "group": "Notifications and conversations",
+            "pages": [
+              "notifications-and-conversations/notifications",
+              "notifications-and-conversations/reminders",
+              "notifications-and-conversations/chat-with-people",
+              "notifications-and-conversations/manage-a-conversation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/ask-o-commands",
+              "reference/integrations"
+            ]
+          }
+        ]
+      }
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/sumbios"
     }
   }
 }

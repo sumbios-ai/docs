@@ -1,0 +1,22 @@
+/* Sumbios brand on Mintlify: solid colours only, no shadows, no gradients. */
+
+:root {
+  --sumbios-teal: #006E80;
+  --sumbios-border: #D0DBDD;
+  --sumbios-warm: #F5DCC4;
+  --sumbios-warm-ink: #7E441A;
+}
+
+/* v3 bans shadows; Mintlify's cards, callouts and code blocks carry soft ones. */
+*,
+*::before,
+*::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* and gradients */
+[class*="gradient"],
+[style*="gradient"] {
+  background-image: none !important;
+}
