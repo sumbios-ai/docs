@@ -53,4 +53,8 @@ html.dark .aom-when,.dark .aom-when,html.dark .aom-why,.dark .aom-why{color:#CDD
 html.dark .aom-prompt,.dark .aom-prompt{background:#0E1A1C;color:#E5EBEC}
 html.dark .aom-ph,.dark .aom-ph{color:#3CCCE2}
 html.dark .aom-copy,.dark .aom-copy{background:#3CCCE2;color:#0B1416}
+.aom-actions{margin-top:auto;display:flex;gap:8px;align-items:center}
+.aom-actions .aom-copy{margin-top:0}
+.aom-watch{border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;text-decoration:none;border:1.5px solid #006E80;color:#006E80}
+html.dark .aom-watch,.dark .aom-watch{border-color:#3CCCE2;color:#3CCCE2}
 /* ask-o-menu:end */

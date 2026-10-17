@@ -8,7 +8,8 @@
   "when": "You have a meeting on the calendar and thirty minutes to get ready.",
   "prompt": "I'm meeting [names] from [company] tomorrow about [topic]. Tell me who they are, what has moved at their company recently, and every real connection between us.",
   "why": "Intersects their public profile and company news with your own history: shared employers, mutual contacts, the last thing you talked about.",
-  "saved": "45 to 90 min"
+  "saved": "45 to 90 min",
+  "youtube": "Q_pVT3OMbOk"
  },
  {
   "type": "meeting",
@@ -21,7 +22,8 @@
   "when": "An event tomorrow with hundreds of people and no plan.",
   "prompt": "Tomorrow is [event]. Find the partners, speakers and companies taking part, cross them with my network, and help me prepare. My goal is to meet [investors and founders].",
   "why": "Turns a speaker list into a ranked list of who to find, who can introduce you, and what to say.",
-  "saved": "1.5 to 2 h"
+  "saved": "1.5 to 2 h",
+  "youtube": "--AYYo1nVkQ"
  },
  {
   "type": "meeting",
@@ -45,7 +47,8 @@
   "when": "A partnership is serious enough to need independent verification, before the NDA.",
   "prompt": "I'm evaluating a potential partnership with @[company]. Run due diligence: who runs it, who backs it, who their key partners and clients are, and any red flags. Then tell me who in my network is connected to any of those companies and who can give me a warm, honest read.",
   "why": "Maps the ownership and board network around the target, then intersects it with your first-degree contacts. Surfaces the person at a sibling company nobody would think to call.",
-  "saved": "1.5 to 3 h"
+  "saved": "1.5 to 3 h",
+  "youtube": "eLnYxw9EJsE"
  },
  {
   "type": "diligence",
@@ -102,7 +105,8 @@
   "when": "A specific fund you want to reach through people, not cold email.",
   "prompt": "Which companies has @[fund] invested in over the past three years? Do a deep research and find people in my network who have been part of those companies.",
   "why": "Turns a portfolio page into a list of people you already know who can vouch for you inside it.",
-  "saved": "1.5 to 2.5 h"
+  "saved": "1.5 to 2.5 h",
+  "youtube": "cqlHUQTABGc"
  },
  {
   "type": "access",
@@ -172,7 +176,8 @@
   "when": "Friday. What happened, who did you meet, what carries over.",
   "prompt": "It's the end of the week. Do a weekly review of my conversations, messages, email and calendar, and who I connected with, so I get a 360 view of new connections and what to keep top of mind for next week.",
   "why": "Reads across every channel and writes the review you would not have written.",
-  "saved": "30 to 60 min"
+  "saved": "30 to 60 min",
+  "youtube": "lW3jsbMOA7Q"
  },
  {
   "type": "network",
