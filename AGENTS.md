@@ -43,7 +43,7 @@ The same checks run on every push in `.github/workflows/checks.yml`.
 
 ## Content boundaries
 
-- **Document only what users can do in the app today.** O answers when you ask. Do not describe O as acting on its own, watching for changes, or sending alerts.
+- **Document only what users can do in the app today.** That includes proactive follow-ups: O follows the topics a user chooses and shares updates in O. Describe it that way, never as O acting, sending or posting in the user's name.
 - **Plans, prices and credits:** explain what users get and what uses credits. Use only the figures Sumbios has published; never estimate a price, a credit cost or a limit.
 - **Integrations:** list only sources that connect today (LinkedIn through the extension, Google Workspace, Microsoft 365, WhatsApp). Do not name integrations that are coming soon.
 - **No real people.** Every example name, screenshot and sample uses fictional people and companies from the demo workspace. Never a real contact, never a real account.
