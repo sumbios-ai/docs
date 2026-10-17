@@ -123,6 +123,22 @@
         ]
       },
       {
+        "tab": "Use cases",
+        "groups": [
+          {
+            "group": "Use cases",
+            "pages": [
+              "use-cases/index",
+              "use-cases/meetings",
+              "use-cases/due-diligence",
+              "use-cases/access",
+              "use-cases/discovery",
+              "use-cases/network-intelligence"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Reference",
         "groups": [
           {

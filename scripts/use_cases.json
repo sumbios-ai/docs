@@ -1,0 +1,447 @@
+[
+ {
+  "type": "meeting",
+  "personas": [
+   "any"
+  ],
+  "title": "Prep me for tomorrow's room",
+  "when": "You have a meeting on the calendar and thirty minutes to get ready.",
+  "prompt": "I'm meeting [names] from [company] tomorrow about [topic]. Tell me who they are, what has moved at their company recently, and every real connection between us.",
+  "why": "Intersects their public profile and company news with your own history: shared employers, mutual contacts, the last thing you talked about.",
+  "saved": "45 to 90 min"
+ },
+ {
+  "type": "meeting",
+  "personas": [
+   "any",
+   "founder",
+   "investor"
+  ],
+  "title": "Prepare for a conference",
+  "when": "An event tomorrow with hundreds of people and no plan.",
+  "prompt": "Tomorrow is [event]. Find the partners, speakers and companies taking part, cross them with my network, and help me prepare. My goal is to meet [investors and founders].",
+  "why": "Turns a speaker list into a ranked list of who to find, who can introduce you, and what to say.",
+  "saved": "1.5 to 2 h"
+ },
+ {
+  "type": "meeting",
+  "personas": [
+   "investor",
+   "corp dev"
+  ],
+  "title": "Prep me for a partner meeting",
+  "when": "A co-investment, exit or add-on conversation with another firm.",
+  "prompt": "I'm meeting [names] from [firm] tomorrow about [co-investment / exit / add-on]. Tell me who they are, what has moved in their portfolio in the last quarter, which of their deals touched ours, and every real connection between us.",
+  "why": "Puts their portfolio moves next to yours and finds the overlaps a search would never surface.",
+  "saved": "1 to 2 h"
+ },
+ {
+  "type": "diligence",
+  "personas": [
+   "corp dev",
+   "investor"
+  ],
+  "title": "Partnership due diligence with a warm read",
+  "when": "A partnership is serious enough to need independent verification, before the NDA.",
+  "prompt": "I'm evaluating a potential partnership with @[company]. Run due diligence: who runs it, who backs it, who their key partners and clients are, and any red flags. Then tell me who in my network is connected to any of those companies and who can give me a warm, honest read.",
+  "why": "Maps the ownership and board network around the target, then intersects it with your first-degree contacts. Surfaces the person at a sibling company nobody would think to call.",
+  "saved": "1.5 to 3 h"
+ },
+ {
+  "type": "diligence",
+  "personas": [
+   "investor"
+  ],
+  "title": "Company diligence before investing",
+  "when": "A deal is on the table and you need the picture and the gaps.",
+  "prompt": "I'm evaluating an investment in @[company]. Run due diligence: who runs it, who backs it, who sits on the board, key customers and partners, and any governance red flags. Then tell me who in my network is connected to any of those people or companies and who can give me a candid, off-the-record read.",
+  "why": "Names what it could not verify (no public board roster, inconsistent round data) as diligence items, and ranks who in your network can fill each gap.",
+  "saved": "2 to 3 h"
+ },
+ {
+  "type": "diligence",
+  "personas": [
+   "investor"
+  ],
+  "title": "Management reference before we back them",
+  "when": "You're keeping the founder or CEO in place and want the honest read.",
+  "prompt": "We're about to back @[company] and keep @[person] in place. Map their career and every company behind it, then tell me who in my network overlapped with them and would give me an honest read on how they actually operate.",
+  "why": "Builds the career map, then finds the people who were there at each stage and says which read each one is best placed to give.",
+  "saved": "1 to 2 h"
+ },
+ {
+  "type": "diligence",
+  "personas": [
+   "HR",
+   "any"
+  ],
+  "title": "The honest reference before I hire",
+  "when": "An offer is about to go out.",
+  "prompt": "I'm about to make an offer to @[person] for [role]. Map their career and the companies behind it, then tell me who in my network overlapped with them and who would give me a candid, off-the-record read.",
+  "why": "Backchannel references from your own network, found in minutes instead of asked around for over a week.",
+  "saved": "1 to 2 h"
+ },
+ {
+  "type": "access",
+  "personas": [
+   "founder"
+  ],
+  "title": "Who can actually introduce me to this investor",
+  "when": "You're raising and need warm paths, not a list of funds.",
+  "prompt": "I'm raising [round] for [thesis]. Find the funds that have backed comparable companies in the last 24 months, then rank who in my network can make a genuine warm introduction to each, and who I should not use.",
+  "why": "Ranks paths by relationship strength and tells you which contacts are too stale or too far from the decision to use.",
+  "saved": "2 to 4 h"
+ },
+ {
+  "type": "access",
+  "personas": [
+   "founder",
+   "investor"
+  ],
+  "title": "Find your way into a fund",
+  "when": "A specific fund you want to reach through people, not cold email.",
+  "prompt": "Which companies has @[fund] invested in over the past three years? Do a deep research and find people in my network who have been part of those companies.",
+  "why": "Turns a portfolio page into a list of people you already know who can vouch for you inside it.",
+  "saved": "1.5 to 2.5 h"
+ },
+ {
+  "type": "access",
+  "personas": [
+   "founder",
+   "investor",
+   "corp dev"
+  ],
+  "title": "Who can reach the partners at this firm",
+  "when": "You know the firm, you need the person and the path.",
+  "prompt": "Who can reach the partners at @[firm]? First from shared work and investment history alone, then through my own network. Rank the paths and tell me which not to use.",
+  "why": "Public graph first (alumni bridges, shared employers), your private network second, with a do-not-use list.",
+  "saved": "1 to 2 h"
+ },
+ {
+  "type": "access",
+  "personas": [
+   "investor"
+  ],
+  "title": "Co-investor and LP access",
+  "when": "Building a syndicate or a co-investment relationship.",
+  "prompt": "Who has co-invested alongside @[firm] in the last 36 months, and which of those funds is now raising or deploying in [sector]? Rank who in my network can make a genuine warm introduction to each, and who we should not use.",
+  "why": "Finds the funds, checks their current activity, then ranks your paths in. Flags when a match is name-similar rather than real.",
+  "saved": "2 to 4 h"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "any",
+   "sales"
+  ],
+  "title": "Find the right people in my network",
+  "when": "You need a shortlist of people who fit a profile, from your own connections.",
+  "prompt": "Find people in my network with more than [3,000] LinkedIn connections whose role is about [relationship intelligence]: executives, managing directors, partners. Give me the top [20].",
+  "why": "Filters your own network on criteria LinkedIn does not expose, in seconds.",
+  "saved": "15 to 25 min"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "any"
+  ],
+  "title": "Who in my network is relevant to what I am doing now",
+  "when": "A new project, a new market, a new problem.",
+  "prompt": "I'm working on [what]. Who in my network is most relevant to it, and why? Think expertise, position, and who they know. Give me the top [10] with a reason for each.",
+  "why": "Matches on context rather than job title, so the right person surfaces even when their headline does not say it.",
+  "saved": "30 to 60 min"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "investor",
+   "HR"
+  ],
+  "title": "Who left, and where did they go",
+  "when": "Tracking talent out of a firm or company.",
+  "prompt": "Track senior movement in and out of @[company] over the last 18 months. Who left, where did they go, and which of them is now reachable through my network?",
+  "why": "Alumni movement across the public graph, intersected with your reach.",
+  "saved": "1 to 2 h"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Review your week",
+  "when": "Friday. What happened, who did you meet, what carries over.",
+  "prompt": "It's the end of the week. Do a weekly review of my conversations, messages, email and calendar, and who I connected with, so I get a 360 view of new connections and what to keep top of mind for next week.",
+  "why": "Reads across every channel and writes the review you would not have written.",
+  "saved": "30 to 60 min"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "My network is going stale",
+  "when": "Once a month, before it costs you.",
+  "prompt": "Show me the ten people in my network I should reconnect with this month, with a specific, non-generic reason for each based on what has changed on their side.",
+  "why": "The reason is drawn from their side (role change, raise, exit), not from how long it has been.",
+  "saved": "1 h"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "What is the inferred network of this company",
+  "when": "Understanding an organisation through the people who moved through it.",
+  "prompt": "What is the inferred network of @[company]? Show me the alumni movement: where people came from, where they went, and which of them I can reach.",
+  "why": "Draws the organisation as a flow of people over time, not an org chart.",
+  "saved": "2 h"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Summarise my network",
+  "when": "A snapshot for yourself or a partner.",
+  "prompt": "Create a summary of my network: the most influential people, where it is strong and where it is thin, and what I should do about it.",
+  "why": "A SWOT of your own relationships, with the names behind each finding.",
+  "saved": "2 h"
+ },
+ {
+  "type": "meeting",
+  "personas": [
+   "any"
+  ],
+  "title": "What did we talk about last time",
+  "when": "A name in the calendar you half remember.",
+  "prompt": "@[person] is on my calendar. What did we last talk about, what did I promise, and what has changed for them since?",
+  "why": "Reads your own emails, messages and notes for the history, then checks their side for what moved.",
+  "saved": "20 min"
+ },
+ {
+  "type": "meeting",
+  "personas": [
+   "founder",
+   "sales"
+  ],
+  "title": "Prep for a customer call",
+  "when": "A prospect or design partner, and you want the room, not just the company.",
+  "prompt": "I have a call with @[company] about [what]. Who is on their side, who decides, who in my network knows them, and what has the company said publicly about [topic] this year?",
+  "why": "Buyer map plus your paths in, in one pass.",
+  "saved": "45 min"
+ },
+ {
+  "type": "meeting",
+  "personas": [
+   "any"
+  ],
+  "title": "Draft the follow-up",
+  "when": "The meeting just ended.",
+  "prompt": "I just met @[person]. Based on my notes and our history, draft a short follow-up in my tone that confirms [what we agreed] and proposes [next step].",
+  "why": "Writes in your voice from your own tone note, with the specifics of this relationship.",
+  "saved": "15 min"
+ },
+ {
+  "type": "diligence",
+  "personas": [
+   "corp dev",
+   "investor"
+  ],
+  "title": "Map the sibling companies",
+  "when": "A target with a complicated ownership cluster.",
+  "prompt": "Do a deep research behind @[company]: find all of their partner and sibling companies, the shared board members, and see who in my network works in any of them.",
+  "why": "Board interlocks across an ownership cluster, then the people you know inside it.",
+  "saved": "2 to 3 h"
+ },
+ {
+  "type": "diligence",
+  "personas": [
+   "any"
+  ],
+  "title": "Who is this person, really",
+  "when": "A name you have been sent with no context.",
+  "prompt": "Who is @[person]? Career, companies, boards, what they have said publicly this year, and every connection between us. Flag anything I should know before I reply.",
+  "why": "The full profile plus the overlap with you, with the awkward things surfaced first.",
+  "saved": "30 min"
+ },
+ {
+  "type": "diligence",
+  "personas": [
+   "investor",
+   "founder"
+  ],
+  "title": "What is a fund actually looking for",
+  "when": "Before you pitch or co-invest.",
+  "prompt": "What has @[fund] invested in over the last two years, at what stage and cheque size, and what does the pattern say they are looking for now? Who in my network has taken money from them?",
+  "why": "Reads the pattern across their deals rather than their website copy.",
+  "saved": "1 to 2 h"
+ },
+ {
+  "type": "access",
+  "personas": [
+   "any"
+  ],
+  "title": "Who can introduce me to this person",
+  "when": "One name, no path.",
+  "prompt": "Who can introduce me to @[person]? Rank the paths by how well I know the connector and how well they know them, and tell me which one to use first.",
+  "why": "Two-sided relationship strength, not just a list of mutual connections.",
+  "saved": "30 min"
+ },
+ {
+  "type": "access",
+  "personas": [
+   "founder"
+  ],
+  "title": "Who in my network can vouch for me at this company",
+  "when": "You are pitching a company and want a reference they trust.",
+  "prompt": "I'm pitching @[company]. Who in my network has worked there, sold to them, or sits on their board, and who among them would vouch for me?",
+  "why": "Finds the people they already trust who also know you.",
+  "saved": "1 h"
+ },
+ {
+  "type": "access",
+  "personas": [
+   "founder",
+   "investor"
+  ],
+  "title": "Find a board member",
+  "when": "A seat to fill and a profile in mind.",
+  "prompt": "Who in my network could sit on the board of [company], given we need [experience]? Rank by fit, independence and how well I know them.",
+  "why": "Screens your own network for a board profile, with independence checked.",
+  "saved": "2 h"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "founder",
+   "HR"
+  ],
+  "title": "Find candidates in my network for a role",
+  "when": "A role to fill before it goes to a recruiter.",
+  "prompt": "I'm hiring a [role]. Who in my network fits, or is one introduction away from someone who does? Give me the top [10] with why, and who could make the intro.",
+  "why": "Second-degree reach with a named connector for each candidate.",
+  "saved": "2 h"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "founder",
+   "sales"
+  ],
+  "title": "Find design partners or first customers",
+  "when": "A product that needs its first ten conversations.",
+  "prompt": "Who in my network runs or influences [function] at companies with [criteria]? I'm looking for design partners for [product]. Top [15], with the angle for each.",
+  "why": "Matches on role, company profile and how you know them.",
+  "saved": "2 h"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "founder"
+  ],
+  "title": "Investors in a place, at a stage",
+  "when": "Raising locally, or travelling.",
+  "prompt": "Show me investors in [city] in my network who write [pre-seed / seed] cheques and are active this year. Top [10], with how I know them.",
+  "why": "Filters on activity, not just the word investor in a headline.",
+  "saved": "1 h"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "any"
+  ],
+  "title": "Who do I know at this company",
+  "when": "The simplest question, asked often.",
+  "prompt": "Who do I know at @[company], and who there previously worked at @[other company]?",
+  "why": "Current and past, in one answer, with the overlap you asked for.",
+  "saved": "10 min"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "any"
+  ],
+  "title": "Experts on a topic in a place",
+  "when": "You need someone who actually knows.",
+  "prompt": "Who are the most senior people in my network working on [topic] in [place]? Rank by depth of expertise and how well I know them.",
+  "why": "Depth from careers and output, not from keywords.",
+  "saved": "45 min"
+ },
+ {
+  "type": "discovery",
+  "personas": [
+   "any"
+  ],
+  "title": "The most seasoned people in my network",
+  "when": "You want the people who have done it more than once.",
+  "prompt": "Who are the most seasoned [entrepreneurs / operators] in my network: people who have built more than one company that ran for at least three years?",
+  "why": "Counts what people have actually done across their whole career.",
+  "saved": "1 h"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Who did I connect with, and what does it say",
+  "when": "Every couple of weeks.",
+  "prompt": "Who did I connect with in the past two weeks? Give me a table with their industries and companies, and tell me what pattern you see.",
+  "why": "A table plus the reading across it.",
+  "saved": "20 min"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Who should I introduce to each other",
+  "when": "Being useful to your own network.",
+  "prompt": "Inside my @[circle], who are the five pairs of people I should introduce to each other, where their backgrounds fill gaps in each other's work?",
+  "why": "Finds complementary pairs, with the reason to make each introduction.",
+  "saved": "1 h"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Who did I meet at that event",
+  "when": "Months later, a name you cannot place.",
+  "prompt": "Who did I meet at [event] on [dates]? What did we talk about, and did anything come of it?",
+  "why": "Calendar, messages and connection dates, stitched into one answer.",
+  "saved": "30 min"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Prepare my week",
+  "when": "Monday morning.",
+  "prompt": "Help me prepare for the week ahead. Go through my emails, calendar and messages: what is coming, who do I need to get back to, and where should I spend my attention?",
+  "why": "A plan built from your own channels, not a to-do list you typed.",
+  "saved": "45 min"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Where my network is thin",
+  "when": "Planning where to spend the next quarter of relationships.",
+  "prompt": "Given what I'm building at [company], where is my network strong and where is it thin? Who are the ten people I should establish a relationship with, and who can get me to each?",
+  "why": "Gap analysis against your goal, with the paths to close it.",
+  "saved": "2 h"
+ },
+ {
+  "type": "network",
+  "personas": [
+   "any"
+  ],
+  "title": "Set a reminder on a relationship",
+  "when": "You promised to follow up.",
+  "prompt": "Remind me [tomorrow at 16:00] to reach out to @[person] about [topic].",
+  "why": "The reminder lives with the relationship, so the context comes back with it.",
+  "saved": "a forgotten promise"
+ }
+]
