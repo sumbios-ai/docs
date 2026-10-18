@@ -72,6 +72,7 @@
             "pages": [
               "network-and-circles/network-map",
               "network-and-circles/search-members",
+              "network-and-circles/member-profile",
               "network-and-circles/friends-and-sharing",
               "network-and-circles/circles",
               "network-and-circles/create-a-circle",
