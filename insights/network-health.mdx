@@ -1,40 +1,144 @@
 ---
 title: "Network Health"
-description: "Take a step back and see how you are keeping in touch with your network."
+description: "See where your access depends on a few relationships, where O needs more context, and which relationship to strengthen next."
 ---
 
-The summaries help you notice relationships that may need attention, using the information available in O.
+import { Annotated } from "/snippets/annotated.jsx"
+
+Network Health gives you four separate measures of your network and one suggestion of where to put your attention. It is a starting point for reflection, not a grade for you or a score for any person.
+
+## When you would use it
+
+After a large import, or before a week of meetings. You want to know whether too much of your access runs through one or two people, whether O knows enough about your connections to help you, and which relationship deserves an hour this week.
 
 ## Where to find it
 
-From Insights, choose Network Health, or visit /intelligence/network-health.
+Select **Insights** in the sidebar, then the **Network Health** tab. The address is `/intelligence/network-health`.
 
-<Frame caption="Insights → Network Health (names and photos blurred)">
-  <img src="/images/insights/network-health.png" alt="Network Health: a relationship to strengthen, and the four factors Network Reach, Context Coverage, Connection Paths and Network Breadth" />
-</Frame>
+<Annotated
+  src="/images/insights/nh-overview.png"
+  alt="The top of Network Health: Relationship goals with a Refresh button, a relationship to strengthen, and the Health by factor summary"
+  caption="Insights → Network Health. Other people's names and photos are blurred."
+  markers={[{"n":1,"x":67.98,"y":23.38},{"n":2,"x":94.66,"y":29.86},{"n":3,"x":1.96,"y":38.25},{"n":4,"x":35.03,"y":47.9},{"n":5,"x":2.37,"y":68.65},{"n":6,"x":86.54,"y":37.89}]}
+/>
 
-## What you can do
+| # | Element | What it does |
+|---|---|---|
+| 1 | **Relationship goals** | How many direct connections O counts, and whether you have set a personal goal. **Edit relationship goals** opens Settings → **Goals**. |
+| 2 | **Updated** and **Refresh** | When O last calculated the page. **Refresh** calculates it again, for example after an import. |
+| 3 | **Relationship to strengthen** | One relationship that a large share of your measured access runs through, with how many measured paths it connects and across how many industry groups. |
+| 4 | **Measured access** | Says what the suggestion is based on: paths O can measure in the data you have connected. |
+| 5 | **Strengthen this relationship** and **Find another path** | **Strengthen this relationship** opens [Field Mode](/getting-started/field-mode) so you can add context about that person. **Find another path** opens [Connectors](/insights/connectors) on that person, to look for a second route. |
+| 6 | **Health by factor** | The four measures at a glance. Each stands on its own; O does not average them into a single grade. |
 
-- Explore each summary and the period it covers.
-- Open a member’s profile or a related page to understand the details behind it.
-- Use what you learn to choose a relationship you would like to give some attention.
+## Health by factor
+
+Further down, each factor has its own card. Open **How this is calculated** (on Connection Paths, **What is included**) to see the method and its source.
+
+<Annotated
+  src="/images/insights/nh-factors.png"
+  alt="Four factor cards: Network Reach, Context Coverage, Connection Paths and Network Breadth, each with its status, detail tiles, how it is calculated, and an action"
+  caption="Health by factor, with every How this is calculated panel open."
+  markers={[{"n":1,"x":2.64,"y":13.32},{"n":2,"x":27.14,"y":13.32},{"n":3,"x":51.65,"y":13.32},{"n":4,"x":76.15,"y":13.32},{"n":5,"x":18.69,"y":18.02},{"n":6,"x":3.38,"y":46.49},{"n":7,"x":3.38,"y":70.15}]}
+/>
+
+| # | Element | What it does |
+|---|---|---|
+| 1 | **Network Reach** | Your progress towards a personal connection goal. |
+| 2 | **Context Coverage** | How much useful context O has for introductions, reminders and recommendations. |
+| 3 | **Connection Paths** | The paths O can see beyond your direct network. An inventory, not a score. |
+| 4 | **Network Breadth** | How varied your network is across industries, countries and seniority levels. |
+| 5 | Status | A word for where the factor stands, such as **Strong**, **Partial view** or **Goal required**. |
+| 6 | **How this is calculated** | The method and the data it uses. Close it with **×**. |
+| 7 | Action | The next step for that factor: **Set a personal target**, **Review recent connections**, **Reveal more paths** or **Review network strengths**. |
+
+### What each factor measures
+
+| Factor | How O calculates it | Source |
+|---|---|---|
+| **Network Reach** | Compares your direct connections with your personal target. Until you set one, the card reads **Goal required**. | Confirmed direct connections and similar-role network sizes |
+| **Context Coverage** | Checks eight useful profile and relationship details for each direct connection, then reports the percentage available. | Connected profiles and your linked notes |
+| **Connection Paths** | Lists active **O friends**, **Observed mutual links**, stored **2nd-degree people** and **3rd-degree people**, and **Inferred hidden bridges**. The categories may overlap and are never combined into a percentage. | O friendships, the selected network graph, and hidden-bridge signals |
+| **Network Breadth** | Scores **Industry breadth**, **Country breadth** and **Seniority breadth** higher when your connections are spread more widely, then averages the three. **Known industries** counts the industries O has seen. | Current industry, country and seniority details |
+
+**Yours vs ICP peer avg.** on Network Reach compares the size of your network with the average for people in roles like yours. It is shown beside the score and never changes it.
+
+**People with context notes** on Context Coverage counts the people you have written notes about. The eight details also include profile information, so the two numbers can differ.
+
+## Next moves and how your network is changing
+
+<Annotated
+  src="/images/insights/nh-moves.png"
+  alt="Your next best moves, with one numbered suggestion, and a monthly chart of new connections"
+  caption="Your next best moves and How your network is changing. Other people's names and photos are blurred."
+  markers={[{"n":1,"x":1.4,"y":39.61},{"n":2,"x":67.35,"y":30.31}]}
+/>
+
+| # | Element | What it does |
+|---|---|---|
+| 1 | **Your next best moves** | Numbered, specific actions based on the people and relationships O can currently measure. Select one to open it. |
+| 2 | **How your network is changing** | New connections by month. **Dated connection coverage** shows how much of your network has a date the chart can use. |
 
 ## Add context while it is fresh
 
-At the bottom of Network Health, O lists people you connected with recently and asks how you know them. Choose **Add context** to write it down while you still remember; it is saved as a note on that person.
+O lists people you connected with recently and asks how you know them. Choose **Add context** to write it down while you still remember; it is saved as a note on that person.
 
-<Frame caption="Network Health → Add context while it is fresh (names and photos blurred)">
+<Frame caption="Add context while it is fresh. Other people's names and photos are blurred.">
   <img src="/images/insights/add-context.png" alt="Three cards for recent connections, each with the person's role and an Add context button" />
 </Frame>
 
-## How to use it
+## Where your network is strongest
 
-- Check which networks and dates are included before comparing results.
-- Look at the details about a member before drawing conclusions from a summary.
-- These summaries are a starting point for reflection, not a score for a person or proof of how close you are.
+The industries, locations, seniority levels and skills most represented in your network. Each tile gives the top value and its share of the connections for which O knows that detail. Below it, **Key connectors to nurture** lists people a lot of your measured access runs through; **Key connectors** opens the full list in [Connectors](/insights/connectors).
+
+<Frame caption="Where your network is strongest">
+  <img src="/images/insights/nh-strongest.png" alt="Four tiles: top industry, top location, top seniority and top skill, each with a percentage" />
+</Frame>
+
+## How to
+
+<Steps>
+  <Step title="Set a personal reach target">
+    Choose **Edit relationship goals**, or **Set a personal target** on the Network Reach card. In Settings → **Goals**, enter your target. Network Reach then shows your progress against it.
+  </Step>
+  <Step title="Give O more context">
+    Choose **Review recent connections** on Context Coverage, or go to **Add context while it is fresh**. Choose **Add context** on a person and write how you know them. Notes are one of the details Context Coverage checks.
+  </Step>
+  <Step title="Reveal more paths">
+    On Connection Paths, choose **Reveal more paths**. With the O browser extension, open a LinkedIn profile and use **Warm Path**: it adds the mutual, second-degree and third-degree relationships it observes to O.
+  </Step>
+  <Step title="Act on a suggestion">
+    Under **Relationship to strengthen** or **Your next best moves**, open a suggestion. Decide for yourself whether to reach out; O never contacts anyone for you.
+  </Step>
+  <Step title="Refresh after a change">
+    After an import or a newly connected source, choose **Refresh** so the measures use the new data.
+  </Step>
+</Steps>
+
+## What O does behind it
+
+- **Four independent measures.** Each score stands on its own. O does not combine them into one number.
+- **Missing is not zero.** Missing data is shown as unavailable rather than scored as zero. A zero means O observed none in an available source; a dash means that source was unavailable.
+- **Paths are an inventory.** Connection Paths lists what O can see, in categories that may overlap and are never added into a total.
+- **Only what you connected.** O measures only the information you have connected or imported. The method is also on the page, under **Data coverage and methodology**.
 
 <Note>
-**Availability and privacy.** O only sees the information you have connected or imported. A missing result may mean there is not enough information; it does not mean a relationship does not exist.
+**A measure, not a verdict.** A missing result may mean there is not enough information. It does not mean a relationship does not exist, and nothing on this page scores a person.
 </Note>
 
-{/* Seeded from O's in-app help, 17 Oct 2026 (app v1.53). This repo is now the source. */}
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Connectors" href="/insights/connectors">
+    The people who connect separate parts of your network.
+  </Card>
+  <Card title="Goals" href="/settings/goals">
+    Set your relationship goals and your personal reach target.
+  </Card>
+  <Card title="Field Mode" href="/getting-started/field-mode">
+    Capture what you just learned about someone.
+  </Card>
+  <Card title="Insights overview" href="/insights/overview">
+    The briefing at the top of Insights.
+  </Card>
+</CardGroup>

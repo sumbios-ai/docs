@@ -1,33 +1,87 @@
 ---
-title: "Friends and shared networks"
-description: "See your friends in O and the networks you have chosen to share with each other."
+title: "Friends and sharing"
+description: "Share parts of your network with people you trust, and search what they share with you."
 ---
 
-You stay in control of which network information you share and with whom.
+import { Annotated } from "/snippets/annotated.jsx"
+
+Friends are other people using O whom you trust. For each friend you choose what they can see of yours, and they choose what you can see of theirs.
+
+## When you would use it
+
+You and a co-founder, a partner or a close colleague each know different people. When you share your networks, each of you can search the other's before asking for an introduction, and a person's profile shows which of your friends also know them.
 
 ## Where to find it
 
-Open Network → Friends at /network/friends or select shared-network controls from Network.
+Select **Network** in the sidebar, then the **Friends** tab. The address is `/network/friends`. You can also open **Friend requests** from **Open workspace tools** (**···**) in the top bar.
 
-<Frame caption="Network → Friends (names and photos blurred)">
-  <img src="/images/network-and-circles/friends.png" alt="The Friends page with the Friends, Requests, Find Friends and Groups tabs, and one friend" />
+<Annotated
+  src="/images/network-and-circles/fr-access.png"
+  alt="The Friends page: tabs for Friends, Requests, Find Friends and Groups, and one friend with access switches for Network, Workspaces, Missions, Circles and Notes"
+  caption="Network → Friends, with one friend's access settings open. The friend's name is blurred."
+  markers={[{"n":1,"x":22.96,"y":3.66},{"n":2,"x":1.64,"y":27.74},{"n":3,"x":82.06,"y":43.6},{"n":4,"x":1.39,"y":49.57},{"n":5,"x":89.95,"y":53.72},{"n":6,"x":2.45,"y":82.99}]}
+/>
+
+| # | Element | What it does |
+|---|---|---|
+| 1 | **Friends** | The Friends page, beside **Network Map** in Network. |
+| 2 | **Friends**, **Requests**, **Find Friends**, **Groups** | Your friends; friend requests waiting for you; people who already use O; and groups of friends you can give access to at once. |
+| 3 | **View profile** | Opens your friend's profile. The arrow beside it opens or closes their access settings. |
+| 4 | **Access for** your friend | What this friend can see of yours, one switch per area. |
+| 5 | **Network** | Lets this friend search your network. **Circles** and **Notes** share those areas the same way. **Workspaces** and **Missions** do the same for those areas. |
+| 6 | **Shared with you** | What this friend shares with you. It reads **Not shared** until they turn sharing on for you. |
+
+## How to
+
+<Steps>
+  <Step title="Add a friend">
+    Open **Find Friends** to see people who already use O, and choose **Add Friend**. The request shows as **Pending** until they accept it.
+  </Step>
+  <Step title="Answer a request">
+    Requests sent to you appear under **Requests**. Accept the ones from people you trust.
+  </Step>
+  <Step title="Choose what a friend can see">
+    On the **Friends** tab, open a friend's access settings with the arrow beside **View profile**. Turn on only the areas you want to share, for example **Network**.
+  </Step>
+  <Step title="Search a friend's network">
+    Open **Open workspace tools** (**···**) in the top bar and choose which networks to include: yours, a friend's shared network, or both. Your searches then include the networks you selected.
+  </Step>
+  <Step title="Give several friends the same access">
+    On **Groups**, choose **New Group**, add friends, and set the group's access once.
+  </Step>
+  <Step title="Stop sharing">
+    Turn a switch off when you no longer want to share that area with that friend.
+  </Step>
+</Steps>
+
+<Frame caption="Open workspace tools: choose which networks to include">
+  <img src="/images/getting-started/workspace-tools.png" alt="The Workspace tools menu with My network, Friend requests, Set reminder and Add note" />
 </Frame>
 
-## What you can do
+## What O does behind it
 
-- See who you are connected with and which networks are being shared.
-- Use the sharing switches to choose what you share with each friend.
-- On the Network page, include a friend’s network when you want to explore the connections they have shared.
-- Open or respond to a sharing invitation using the action shown.
-
-## How to use it
-
-- Review each sharing setting before changing it.
-- Choose only the friends whose networks you intend to include in a view.
-- Turn off or limit sharing when you no longer want to share that information with someone.
+- **Per friend, per area, one way.** Each switch covers what one friend can see of yours. What they share with you is their choice, shown under **Shared with you**.
+- **Search, with permission.** When you share **Network** with a friend, they can search your network. Nothing is shared until you turn a switch on.
+- **Mutual connections.** Once you are friends, a person's profile shows which of your friends also connect to that person, under **Mutual connections**. It helps you see who could give you an introduction.
+- **Friends count as paths.** On [Network Health](/insights/network-health), **Connection Paths** counts your active **O friends** as one of the paths beyond your direct network.
 
 <Note>
-**Availability and privacy.** Shared network access is governed by the sharing permissions shown. Shared data belongs to the person who provided it; do not redistribute it without permission.
+**Shared data belongs to the person who shared it.** Use it to decide who to ask for an introduction, and do not pass it on without their permission.
 </Note>
 
-{/* Seeded from O's in-app help, 17 Oct 2026 (app v1.53). This repo is now the source. */}
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Search and review members" href="/network-and-circles/search-members">
+    Search your network, and a friend's when they share it.
+  </Card>
+  <Card title="Network Health" href="/insights/network-health">
+    See how your paths beyond your direct network add up.
+  </Card>
+  <Card title="Circles" href="/network-and-circles/circles">
+    Keep groups of people together for one purpose.
+  </Card>
+  <Card title="Search O and use the header" href="/getting-started/search-and-header">
+    Universal search and the workspace tools in the top bar.
+  </Card>
+</CardGroup>

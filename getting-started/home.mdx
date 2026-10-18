@@ -1,51 +1,76 @@
 ---
-title: "Home"
-description: "Ask O about someone in your network, prepare for a conversation, or think through your next step."
+title: "Ask O"
+sidebarTitle: "Home and Ask O"
+description: "Ask about the people in your network in your own words, and get an answer drawn from what O remembers."
 ---
 
-When O creates a list or document, you can open it beside the conversation.
+import { Annotated } from "/snippets/annotated.jsx"
+
+Ask O is where you ask about your network in plain words: who someone is, who can introduce you, what has changed. It is the first thing on **Home**, and you can open it from any page.
+
+## When you would use it
+
+Before a meeting, when you want the context on everyone in the room. When you need a warm way into a company or a fund. When you want to know who in your network knows a market you are entering. You ask the way you would ask a colleague who knows everyone you know.
 
 ## Where to find it
 
-Choose Home in the application sidebar.
+Select **Home** in the sidebar. The address is `/home`. On any other page, choose **Open Ask O** in the top bar to open it beside what you are doing; see [Open the Assistant from anywhere](/getting-started/assistant-anywhere).
 
-<Frame caption="Home">
-  <img src="/images/getting-started/home.png" alt="Home: the Ask O box, with the hint Ask anything, @ to mention, / for commands" />
+<Annotated
+  src="/images/getting-started/ask-home.png"
+  alt="Home: the Ask O header with History and New chat, a greeting, and the message box with attach and send buttons"
+  caption="Home"
+  markers={[{"n":1,"x":10.2,"y":3.3},{"n":2,"x":82.72,"y":3.3},{"n":3,"x":97.38,"y":8.81},{"n":4,"x":25.53,"y":63.43},{"n":5,"x":29.62,"y":73.14},{"n":6,"x":70.29,"y":73.26}]}
+/>
+
+| # | Element | What it does |
+|---|---|---|
+| 1 | **Ask O** | The conversation you are in. |
+| 2 | **History** | Your earlier conversations. Filter them by time, and pin, rename or delete one. |
+| 3 | **New chat** | Starts a fresh conversation, without carrying over the earlier one. |
+| 4 | Message box | Type your question here. The hint reminds you: **Ask anything, @ to mention, / for commands**. |
+| 5 | **Attach a supported document** | Adds a document for O to use in this conversation. |
+| 6 | **Send message** | Sends your question. |
+
+Under the box, O reminds you: **AI can make mistakes. Check important info.**
+
+## Mention people and companies with @
+
+Type `@` and the start of a name, then choose from the list. O then knows exactly who or what you mean, even when two people share a name. You can mention a person, a company, a note or a Circle.
+
+<Frame caption="Type @ and a name in the message box">
+  <img src="/images/getting-started/ask-mention.png" alt="A mention suggestion for a person, with their role, marked Person" width="560" />
 </Frame>
 
-## What you can do
+## Start a specific job with /
 
-- Choose New chat when you want to start fresh.
-- Choose History to pick up an earlier conversation.
-- Type what you would like help with, then send your message.
-- Open a list or document from O’s answer to explore it beside the chat. On a larger screen, drag the divider to give either side more room.
+Type `/` to see the commands, grouped as Explore, Prepare, Organize, Automate and Open. A command tells O what kind of help you want, for example `/person` for a deep dive into one person or `/intro` to find a warm intro path. Every command is listed in [Ask O commands](/reference/ask-o-commands). You can always write in your own words instead.
 
-## How to use it
+<Frame caption="Type / in the message box">
+  <img src="/images/reference/ask-o-commands.png" alt="The command menu that opens when you type a slash" width="560" />
+</Frame>
 
-- Tell O what you are trying to do. A name, a little background, or a specific question helps.
-- Read the answer and check its sources before relying on important details.
-- If the answer includes a list or document, select it to take a closer look.
-- Start a new chat when you want to explore a different topic without carrying over the earlier conversation.
+## How to
 
-## Find your way around
+<Steps>
+  <Step title="Ask your question">
+    Write what you want to know and what you are trying to do. A name, a little background or the outcome you want all help. For example: *Who in my network knows people at Northwind, and how do I know them?*
+  </Step>
+  <Step title="Point O at the right people">
+    Mention people and companies with `@`, so O does not have to guess who you mean.
+  </Step>
+  <Step title="Read the answer and check it">
+    When an answer includes a list or a document, select it to open it beside the conversation. On a larger screen, drag the divider to give either side more room. Check important details before you rely on them.
+  </Step>
+  <Step title="Keep what matters">
+    Ask O to remember a follow-up: *Remind me to call Sarah tomorrow at 3pm.* Reminders appear in [Notifications → Reminders](/notifications-and-conversations/reminders).
+  </Step>
+  <Step title="Start over or pick up again">
+    Choose **New chat** for a different topic, or **History** to return to an earlier conversation.
+  </Step>
+</Steps>
 
-The side menu takes you to the pages available to you. Use Network to explore your members or Notes to keep something you want to remember. The menu button at the top opens or closes the navigation.
-
-## Know where you are
-
-The page path at the top shows where you are in O. On deeper pages, choose an earlier part of the path to go back to that section. Here, you are on Home.
-
-## Search across O
-
-Looking for a member, company, or note? Choose Search in the top bar, enter a name or a few words, and open a result. Search only shows information you are allowed to access.
-
-## Make O your own
-
-Open your account menu, then choose Settings to adjust how O looks, review your goals, or connect an account. You can come back whenever your preferences change.
-
-## Explore an answer
-
-When O’s answer includes a list or document, select it to take a closer look. On a larger screen, it opens beside the conversation. Check important details and sources. A draft is not sent to anyone unless you choose a separate sending action.
+Not sure what to ask? [The Ask O menu](/use-cases/index) has ready-made prompts for meetings, due diligence, warm introductions and more.
 
 ## Ask O to keep an eye on something
 
@@ -53,14 +78,35 @@ Tell O what to follow, in your own words:
 
 > Keep an eye on Acme's launch.
 
-O follows the topic and shares an update when there is new information. To stop:
+O follows the topic and shares an update in O when there is new information. To stop:
 
 > Stop tracking Acme's launch.
 
 Updates need **Follow-up updates** turned on. See [Proactive follow-ups](/settings/chat#proactive-follow-ups).
 
+## What O does behind it
+
+- **It answers from your network.** O works with the people, companies, notes and sources you have connected or imported, and, if you choose to include them, networks that friends have shared with you.
+- **It prepares; you decide.** Writing a draft does not send it to anyone. Whether and how you reach out is always your choice.
+- **It can be wrong.** O can make mistakes. Check important facts, and the sources an answer gives, before you act on them.
+
 <Note>
-**Availability and privacy.** O works with the information and features available to your account and can make mistakes. Check important facts. Writing a draft here does not send it to anyone; sending is a separate action you choose.
+**Availability and privacy.** O works with the information and features available to your account. Your conversations are listed under **History**, where you can delete any of them.
 </Note>
 
-{/* Seeded from O's in-app help, 17 Oct 2026 (app v1.53). This repo is now the source. */}
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Ask O commands" href="/reference/ask-o-commands">
+    Every slash command and the keys that help you move around.
+  </Card>
+  <Card title="The Ask O menu" href="/use-cases/index">
+    Use cases, with prompts ready to copy.
+  </Card>
+  <Card title="Open the Assistant from anywhere" href="/getting-started/assistant-anywhere">
+    Ask O beside any page.
+  </Card>
+  <Card title="Find your way around" href="/getting-started/navigation">
+    The sidebar, the page path and the top bar.
+  </Card>
+</CardGroup>

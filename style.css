@@ -58,3 +58,14 @@ html.dark .aom-copy,.dark .aom-copy{background:#3CCCE2;color:#0B1416}
 .aom-watch{border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;text-decoration:none;border:1.5px solid #006E80;color:#006E80}
 html.dark .aom-watch,.dark .aom-watch{border-color:#3CCCE2;color:#3CCCE2}
 /* ask-o-menu:end */
+
+/* annotated:start */
+.ann{margin:24px 0}
+.ann-frame{position:relative;line-height:0;container-type:inline-size}
+.ann-img{display:block;width:100%;height:auto;margin:0;border:1px solid #D0DBDD;border-radius:12px;background:#FFFFFF}
+/* dots scale with the image, so they cover the same share of it on a phone as on a desktop */
+.ann-dot{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:clamp(15px,3.6cqw,26px);height:clamp(15px,3.6cqw,26px);border-radius:999px;background:#006E80;color:#FFFFFF;border:2px solid #FFFFFF;font-size:clamp(9px,1.8cqw,13px);font-weight:700;line-height:1;box-sizing:border-box;pointer-events:none}
+.ann-cap{margin-top:10px;font-size:14px;line-height:1.4;color:#5A6B6E;text-align:center}
+html.dark .ann-img,.dark .ann-img{border-color:#2C4144}
+html.dark .ann-cap,.dark .ann-cap{color:#CDD6D8}
+/* annotated:end */
