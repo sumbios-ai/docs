@@ -1,34 +1,109 @@
 ---
 title: "Circles"
-description: "Keep groups of members together for a purpose that matters to you, such as a project or a shared interest."
+description: "Keep the people and companies you need for one purpose together, and see what needs your attention in that group."
 ---
 
-Browse your Circles, see who is in each one, and check which ones have been shared with you.
+import { Annotated } from "/snippets/annotated.jsx"
+
+A Circle is a group of people and companies you keep together for one purpose: a deal, a project, a hiring search, a shared interest. Inside it, O brings together what you know about those people and what needs a follow-up.
+
+## When you would use it
+
+You are working on something that involves a dozen people across a few companies. Instead of keeping them in your head or a spreadsheet, you put them in a Circle, and every time you open it you see who has notes, who has a reminder due, and what has changed.
 
 ## Where to find it
 
-Select Circles in the sidebar.
+Select **Circles** in the sidebar. The address is `/circles`.
 
-<Frame caption="Circles">
-  <img src="/images/network-and-circles/circles.png" alt="The Circles page with Create Circle, search and filters, and one private Circle with two members" />
+<Annotated
+  src="/images/network-and-circles/circles-list.png"
+  alt="The Circles page: Create Circle, search and filters, and a table with one private Circle"
+  caption="Circles"
+  markers={[{"n":1,"x":16.89,"y":27.23},{"n":2,"x":1.31,"y":41.16},{"n":3,"x":33.72,"y":41.52},{"n":4,"x":13.28,"y":63.48},{"n":5,"x":92.72,"y":63.66}]}
+/>
+
+| # | Element | What it does |
+|---|---|---|
+| 1 | **Create Circle** | Starts a new Circle. See [Create or edit a Circle](/network-and-circles/create-a-circle). |
+| 2 | **Search Circles...** | Finds a Circle by name. |
+| 3 | **Filters** | Narrows the list. **Display** on the right changes which columns you see, and the round arrow refreshes the list. |
+| 4 | A Circle | Its name, **Description**, **Type**, **Members**, **Tags**, **Shared by** and when it was **Updated**. A lock means the Circle is private. Select it to open it. |
+| 5 | Actions (**···**) | **Open**, **Edit**, **Discuss with friends** and **Delete** for a Circle you own. |
+
+## Inside a Circle
+
+Open a Circle to see its **Overview**. The buttons beside the title switch between four views: **Overview**, **People** (every member, with search, **Filter** and **Export**), **Map** (how the members connect) and **Signals** (recent changes for the Circle's members).
+
+<Annotated
+  src="/images/network-and-circles/circle-overview.png"
+  alt="Inside a Circle: the view buttons, Feed settings, Import CSV/XLSX, the Circle intelligence card, four counters, and Follow up next"
+  caption="Inside a Circle, on Overview. The companies under Where this Circle works are blurred."
+  markers={[{"n":1,"x":11.05,"y":23.56},{"n":2,"x":22.01,"y":23.56},{"n":3,"x":34.59,"y":23.56},{"n":4,"x":43.01,"y":23.8},{"n":5,"x":2.95,"y":28.84},{"n":6,"x":2.05,"y":51.14},{"n":7,"x":69.26,"y":34.11},{"n":8,"x":2.95,"y":62.53},{"n":9,"x":2.95,"y":82.49},{"n":10,"x":65.85,"y":82.49}]}
+/>
+
+| # | Element | What it does |
+|---|---|---|
+| 1 | Views | **Overview**, **People**, **Map** and **Signals**. |
+| 2 | **Feed settings** | Chooses which panels are active for this Circle: **News**, **Activity** and **Company Signals**. |
+| 3 | **Import CSV/XLSX** | Adds people to the Circle from a spreadsheet. |
+| 4 | Actions (**···**) | **Edit Details**, **Export CSV** and **Delete Circle**. See [Export or delete a Circle](/network-and-circles/export-or-delete-a-circle). |
+| 5 | **Circle intelligence** | O brings together saved context, follow-ups and recent signals for the Circle. Missing evidence stays visible instead of being guessed. |
+| 6 | **Ask O what matters**, **View people**, **Open Notes**, **Review signals** | Ask O about this Circle, or jump to its people, its notes or its signals. |
+| 7 | **Relationship context** | The share of members for whom O has at least one note, reminder or recent signal. It does not mean O knows your whole history with them. |
+| 8 | Counters | **Members** in the Circle, **Saved context** (members with notes), **Follow-ups** (pending reminders) and **Recent signals** (available changes). |
+| 9 | **Follow up next** | Pending reminders first, then members with recent signals. |
+| 10 | **Where this Circle works** | The companies the members work at. Beside it, **Where relationships are** shows their locations. |
+
+<Frame caption="Feed settings: the panels you can turn on for a Circle">
+  <img src="/images/network-and-circles/circle-feeds.png" alt="Circle feeds: switches for News, Activity and Company Signals" width="300" />
 </Frame>
 
-## What you can do
+## How to
 
-- Choose New/Create to start a Circle for members you want to keep together.
-- Choose a Circle to explore its members, or select Open from its menu.
-- Use Edit to change a circle you own.
-- Use Delete to remove a circle you own after reviewing the confirmation.
-- Open the circle’s Chat action where available.
+<Steps>
+  <Step title="Create a Circle">
+    Choose **Create Circle**, give it a name that says what it is for, and add people. You can also ask O in your own words, or use `/add-to-circle` in [Ask O](/getting-started/home).
+  </Step>
+  <Step title="Add people from a spreadsheet">
+    Open the Circle and choose **Import CSV/XLSX**.
+  </Step>
+  <Step title="See what needs attention">
+    Open the Circle's **Overview**. Start with **Follow up next**, then look at **Relationship context** to see which members O knows little about.
+  </Step>
+  <Step title="Build context">
+    Choose **Open Notes** to write what you know, or set a reminder for a member. Both count towards **Relationship context**.
+  </Step>
+  <Step title="Follow changes">
+    In **Feed settings**, turn on the panels you want, then check **Signals** for recent changes.
+  </Step>
+  <Step title="Ask about the group">
+    Choose **Ask O what matters** to ask about this Circle in Ask O.
+  </Step>
+</Steps>
 
-## How to use it
+## What O does behind it
 
-- Use the search/filter controls to narrow the circle list.
-- Look for the private and shared labels so you know who can see the Circle.
-- Use the card menu rather than selecting the card when you intend to edit or delete.
+- **A Circle is yours.** It is your way of organising people. It does not mean they have joined a group together, and they are not told.
+- **Private until you share it.** A lock in the list marks a private Circle. Circles shared with you show who shared them under **Shared by**. Friends see your Circles only if you turn on **Circles** in their [access settings](/network-and-circles/friends-and-sharing).
+- **Evidence, not guesses.** Coverage and follow-ups come from your notes, your reminders and the signals O can see. Where O has nothing, the page says so.
 
 <Note>
-**Availability and privacy.** Shared circles are not editable by recipients from the owner-only menu. Deletion is destructive; confirm the circle name and contents first.
+**Exports contain people's details.** **Export CSV** downloads member information. Keep the file somewhere safe, and delete it when you no longer need it.
 </Note>
 
-{/* Seeded from O's in-app help, 17 Oct 2026 (app v1.53). This repo is now the source. */}
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Create or edit a Circle" href="/network-and-circles/create-a-circle">
+    Name a Circle, choose its members and decide how private it is.
+  </Card>
+  <Card title="Open and manage a Circle" href="/network-and-circles/manage-a-circle">
+    The People, Map and Signals views in more detail.
+  </Card>
+  <Card title="Friends and sharing" href="/network-and-circles/friends-and-sharing">
+    Share a Circle with people you trust.
+  </Card>
+  <Card title="Notes" href="/notes-and-knowledge/notes">
+    Keep what you know about the people in a Circle.
+  </Card>
+</CardGroup>

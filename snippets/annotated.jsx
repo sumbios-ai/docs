@@ -1,8 +1,9 @@
 // A screenshot with numbered markers. The numbers match the page's anatomy table.
 // Marker positions are percentages of the image, measured on the live app when
 // the screenshot was taken, so they stay on the element as the image scales.
-export const Annotated = ({ src, alt, caption, markers = [] }) => (
-  <figure className="ann not-prose">
+// size="sm" draws smaller dots, for a dense screenshot shown at a small scale.
+export const Annotated = ({ src, alt, caption, markers = [], size }) => (
+  <figure className={"ann not-prose" + (size === "sm" ? " ann-sm" : "")}>
     <div className="ann-frame">
       <img src={src} alt={alt} className="ann-img" />
       {markers.map((m) => (

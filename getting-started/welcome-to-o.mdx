@@ -1,29 +1,88 @@
 ---
 title: "Welcome to O"
-description: "O helps you get to know your network, remember what matters, and prepare for conversations."
+description: "What Sumbios O is, what is on the screen, and what to do in your first hour."
 ---
 
-Start with a question on Home, then explore your members, notes, and other available pages from the side menu.
+import { Annotated } from "/snippets/annotated.jsx"
 
-## Where to find it
+Sumbios O is an executive assistant for your whole network. It remembers the people you know, what you know about them and how you are connected, so you can ask about your network instead of searching through it. O prepares you; you decide what to do.
 
-Open Help from the sidebar whenever you want to learn a part of O. Return to Home to begin using the application.
+## When you would use it
 
-## What you can do
+Whenever a person matters to what you are doing next: a meeting, an introduction, a hire, a deal, a fundraise. You ask O who is involved, what has changed and who can help, and you walk in prepared.
 
-- Use Home to ask O a question about a goal or upcoming conversation.
-- Explore Network to find a member you know and review their available profile.
-- Write a note to keep a detail you want to remember.
-- Search Help when you need instructions for a particular page or action.
+## O in one screen
 
-## How to use it
+Every page has the same frame: the sidebar on the left, the top bar across the top, and the page itself in the middle. Here it is on **Home**.
 
-- Start with a goal you can describe in one sentence.
-- Ask O to help you explore options, then check any suggested facts against their sources.
-- You choose what to save, share, or do next. Reading Help does not contact anyone.
+<Annotated
+  src="/images/getting-started/welcome-shell.png"
+  alt="O with the sidebar on the left, the top bar with search and icons, and Home with the Ask O message box"
+  caption="O on Home"
+  size="sm"
+  markers={[{"n":1,"x":15.11,"y":5.86},{"n":2,"x":15.28,"y":11.56},{"n":3,"x":15.28,"y":15.56},{"n":4,"x":15.28,"y":19.56},{"n":5,"x":15.28,"y":23.56},{"n":6,"x":15.28,"y":27.56},{"n":7,"x":15.28,"y":31.56},{"n":8,"x":15.28,"y":35.56},{"n":9,"x":12.45,"y":84.44},{"n":10,"x":75.31,"y":8.22},{"n":11,"x":84.6,"y":8.22}]}
+/>
+
+| # | Element | What it does |
+|---|---|---|
+| 1 | Workspace and plan | Your workspace, the app version and your plan, for example **Essential**. Select the plan to open billing settings. |
+| 2 | **Home** | [Ask O](/getting-started/home): ask about your network in your own words. |
+| 3 | **Insights** | Your relationship briefing, [Network Health](/insights/network-health) and more views of your network. |
+| 4 | **Network** | Everyone in your network, the Network Map, and [Friends](/network-and-circles/friends-and-sharing). |
+| 5 | **Circles** | [Groups of people and companies](/network-and-circles/circles) you keep together for one purpose. |
+| 6 | **Notes** | [What you know](/notes-and-knowledge/notes) about people, companies and conversations. |
+| 7 | **Discovery** | [Find people and companies](/discovery/people-search) beyond your network. Discovery searches use credits. |
+| 8 | **Notifications** | [Updates and reminders](/notifications-and-conversations/notifications) waiting for you. |
+| 9 | **Referrals & Credits**, **Help**, **Changelog**, **Feedback** | Your [credits and referral link](/settings/referrals-and-credits), the in-app help, what is new in O, and where to send ideas and problems. |
+| 10 | Search | [Universal search](/getting-started/search-and-header) across people, companies and notes. Press `⌘ K` from anywhere. |
+| 11 | Top bar, from left | **Network timezones** with your local time; **Open workspace tools** (**···**) to choose which networks to include, answer friend requests, set a reminder or add a note; the bell for notifications; **Open Help**; and **Open user menu** for your account and **Settings**. |
+
+On any page other than Home, the top bar also has **Open Ask O**, so you can ask without leaving the page.
+
+## Your first hour
+
+<Steps>
+  <Step title="Bring your network in">
+    Install the O browser extension and import your LinkedIn connections. In Settings → [Connections](/settings/connections), connect Google Workspace, Microsoft 365 or WhatsApp. See [Integrations](/reference/integrations) for what each one brings in.
+  </Step>
+  <Step title="Tell O what you are working on">
+    In Settings → [Goals](/settings/goals), choose what you want help with and describe your current focus. O uses it to shape its answers.
+  </Step>
+  <Step title="Ask your first question">
+    On **Home**, ask about a real meeting or a person you need to reach. Not sure what to ask? Start from [the Ask O menu](/use-cases/index).
+  </Step>
+  <Step title="Add what you know">
+    Write a note about someone you met this week, or use **Add context** on [Network Health](/insights/network-health). On your phone, [Field Mode](/getting-started/field-mode) lets you dictate or type rough notes and save them.
+  </Step>
+  <Step title="Share with someone you trust">
+    Add a co-founder or a close colleague as a [friend](/network-and-circles/friends-and-sharing), and choose what each of you can see.
+  </Step>
+</Steps>
+
+## What O does behind it
+
+- **It remembers what you connect.** O works only with the people, sources and notes you bring in. The more context it has, the better it can help.
+- **It prepares; you decide.** O answers in the app. It never sends a message, posts or contacts anyone in your name.
+- **You control sharing.** Nothing about your network is shared with a friend until you turn it on, one area at a time.
+- **It can be wrong.** Check important facts before you rely on them.
 
 <Note>
-**Availability and privacy.** Not every section is available to every account. Availability depends on your plan, access, connections, and the data you have chosen to bring into O.
+**Availability.** What you see depends on your plan, your access and the sources you have connected. Some pages and features are not available on every plan.
 </Note>
 
-{/* Seeded from O's in-app help, 17 Oct 2026 (app v1.53). This repo is now the source. */}
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Ask O" href="/getting-started/home">
+    The message box, mentions, commands and history.
+  </Card>
+  <Card title="The Ask O menu" href="/use-cases/index">
+    Use cases, with prompts ready to copy.
+  </Card>
+  <Card title="Sign in and get started" href="/getting-started/sign-in-and-get-started">
+    Sign in, and the first steps after.
+  </Card>
+  <Card title="Find your way around" href="/getting-started/navigation">
+    The sidebar, the page path and the top bar.
+  </Card>
+</CardGroup>
