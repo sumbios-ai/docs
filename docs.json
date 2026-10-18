@@ -93,7 +93,6 @@
             "pages": [
               "discovery/people-search",
               "discovery/company-search",
-              "discovery/jobs",
               "discovery/search-history"
             ]
           },
