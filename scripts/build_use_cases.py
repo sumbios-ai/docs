@@ -21,14 +21,14 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "scripts" / "use_cases.json").read_text())
 
 TYPES = [
-    ("meeting", "Meetings", "meetings", "Walk into every room knowing who is there, what has changed for them, and what connects you."),
-    ("diligence", "Due diligence", "due-diligence", "Get the picture behind a company or a person, and the people in your network who can give you an honest read."),
-    ("access", "Access", "access", "Find the warm path to a person, a firm or a fund, and know which paths not to use."),
-    ("discovery", "Discovery", "discovery", "Find the right people in your network, or one introduction away, for what you are doing now."),
-    ("network", "Network intelligence", "network-intelligence", "Understand your own network: what changed, who to reconnect with, where it is strong and where it is thin."),
+    ("meeting", "Meetings", "meetings", "Go into every meeting knowing who is there, what has changed for them, and how you are connected."),
+    ("diligence", "Due diligence", "due-diligence", "Get the background on a company or a person, and find the people in your network who can give you an honest opinion."),
+    ("access", "Access", "access", "Find someone you know who can introduce you to a person, a firm or a fund, and learn which people not to ask."),
+    ("discovery", "Discovery", "discovery", "Find the right people for what you are working on now, in your network or one introduction away."),
+    ("network", "Network intelligence", "network-intelligence", "See what has changed in your network, who to get back in touch with, and where it is strong or thin."),
 ]
 PERSONAS = [("any", "Everyone"), ("investor", "Investor"), ("founder", "Founder"),
-            ("corp dev", "Corp dev"), ("HR", "HR"), ("sales", "Sales")]
+            ("corp dev", "Corporate development"), ("HR", "HR"), ("sales", "Sales")]
 PLABEL = dict(PERSONAS)
 
 
@@ -47,20 +47,20 @@ def write_pages():
     for key, label, page, intro in TYPES:
         cases = [d for d in DATA if d["type"] == key]
         lines = ["---", f'title: "{label}"', f'description: "{intro}"', "---", "",
-                 "Each prompt is ready to paste into Ask O. Swap the bracketed parts for your own, "
-                 "and mention people and companies with `@` so O finds them in your network.", ""]
+                 "Copy any prompt below and paste it into Ask O. Replace the words in square brackets with your own. "
+                 "Type `@` before the name of a person or a company so O finds them in your network.", ""]
         for d in cases:
             lines += [f"## {d['title']}", "",
                       f"**For:** {who(d['personas'])}. **When:** {d['when']}", "",
                       "```text wrap", d["prompt"], "```", ""]
             if d.get("youtube"):
-                lines += ["<Frame caption=\"The run, recorded in O (other people's names and photos blurred)\">",
+                lines += ["<Frame caption=\"Recorded in O. Other people's names and photos are blurred.\">",
                           f'  <iframe className="w-full aspect-video rounded-xl" src="https://www.youtube-nocookie.com/embed/{d["youtube"]}?rel=0" '
                           f'title="{d["title"]}" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>',
                           "</Frame>", ""]
             lines += [
-                      f"**What O does that a search can't:** {d['why']} **Time saved:** {d['saved']}.", ""]
-        lines.append("Browse every use case on one page, with filters: [the Ask O menu](/use-cases/index).")
+                      f"**What O does that a search can't:** {d['why']} **Saves you:** {d['saved']}.", ""]
+        lines.append("All the use cases are on one page, with filters, in [the Ask O menu](/use-cases/index).")
         (out / f"{page}.mdx").write_text("\n".join(lines) + "\n")
 
 
@@ -111,10 +111,10 @@ export const AskOMenu = () => {
             <h3 className="aom-title">{d.n}</h3>
             <p className="aom-when">{d.w}</p>
             <div className="aom-prompt">{fmt(d.pr)}</div>
-            <p className="aom-why"><b>What O does that a search can't:</b> {d.why} <b>Saved:</b> {d.saved}</p>
+            <p className="aom-why"><b>What O does that a search can't:</b> {d.why} <b>Saves you:</b> {d.saved}</p>
             <div className="aom-actions">
               <button onClick={() => copy(d)} className="aom-copy">{copied === d.id ? "Copied" : "Copy prompt"}</button>
-              {d.yt ? <a href={"https://www.youtube.com/watch?v=" + d.yt} target="_blank" rel="noopener" className="aom-watch">Watch the run</a> : null}
+              {d.yt ? <a href={"https://www.youtube.com/watch?v=" + d.yt} target="_blank" rel="noopener" className="aom-watch">Watch the video</a> : null}
             </div>
           </div>
         ))}
@@ -132,17 +132,17 @@ def write_index():
         f'  <Card title="{label}" href="/use-cases/{page}">\n    {intro}\n  </Card>' for _, label, page, intro in TYPES)
     text = f"""---
 title: "The Ask O menu"
-description: "Use cases and the prompts that run them. Swap the bracketed parts, copy, and paste into Ask O."
+description: "Ready-made prompts for Ask O, sorted by the kind of work. Change the words in brackets, copy, and paste."
 mode: "wide"
 ---
 
 import {{ AskOMenu }} from "/snippets/ask-o-menu.jsx"
 
-Filter by the kind of work and by who you are, or search. Bracketed values are placeholders; mention people and companies with `@` so O finds them in your network.
+Pick the kind of work and your role to narrow the list, or search for a word. Replace the words in square brackets with your own, and type `@` before the name of a person or a company so O finds them in your network.
 
 <AskOMenu />
 
-## By form of intelligence
+## By kind of work
 
 <CardGroup cols={{2}}>
 {cards}
