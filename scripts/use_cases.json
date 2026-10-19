@@ -295,6 +295,17 @@
  {
   "type": "access",
   "personas": [
+   "any"
+  ],
+  "title": "The best introducer, with /intro",
+  "when": "You know who you want to meet and want the warm path in one command.",
+  "prompt": "/intro What is the best person to introduce me to @[person]?",
+  "why": "The /intro command tells O to look for a warm introduction path, so the answer is the one person to ask, not a list of mutual connections.",
+  "saved": "30 min"
+ },
+ {
+  "type": "access",
+  "personas": [
    "founder"
   ],
   "title": "Who in my network can vouch for me at this company",
