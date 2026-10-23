@@ -45,7 +45,7 @@ The same checks run on every push in `.github/workflows/checks.yml`.
 
 - **Document only what users can do in the app today.** That includes proactive follow-ups: O follows the topics a user chooses and shares updates in O. Describe it that way, never as O acting, sending or posting on its own.
 - **Plans, prices and credits:** explain what users get and what uses credits. Use only the figures Sumbios has published; never estimate a price, a credit cost or a limit.
-- **What O works out about people:** plain traits such as seniority, decision-maker, people manager and open to work may be described. Never describe scores about a person (fit scores, job-change risk).
+- **What O works out about people:** plain traits such as seniority, decision-maker, people manager and open to work may be described. Never describe scores about a person.
 - **Integrations:** list only sources that connect today (LinkedIn through the extension, Google Workspace, Microsoft 365, WhatsApp). Do not name integrations that are coming soon.
 - **Other people stay private.** In screenshots, every other person's name, photo, email and phone number is blurred; roles, companies and dates may stay. A few people have given permission to appear unblurred. Example names in text are fictional (Acme, Northwind).
 - **No roadmap dates, and no security or data-handling claims** beyond what the Trust and privacy pages already say.
