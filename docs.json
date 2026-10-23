@@ -47,6 +47,7 @@
               "getting-started/welcome-to-o",
               "getting-started/sign-in-and-get-started",
               "getting-started/home",
+              "getting-started/how-to-ask",
               "getting-started/assistant-anywhere",
               "getting-started/search-and-header",
               "getting-started/navigation",
@@ -143,6 +144,7 @@
           {
             "group": "Reference",
             "pages": [
+              "reference/what-you-can-ask",
               "reference/ask-o-commands",
               "reference/integrations"
             ]
