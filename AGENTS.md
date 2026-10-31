@@ -34,7 +34,7 @@ The same checks run on every push in `.github/workflows/checks.yml`.
 |---|---|
 | Sumbios O, or O | Sumbios.O, Symbios |
 | the Assistant, Ask O | Companion |
-| an executive assistant for your whole network | network companion |
+| the AI executive assistant for your professional network (word for word, set 31 Oct 2026) | network companion, an executive assistant for your whole network |
 | network relationship memory (NRM), spelled out once per page at most | NRM on its own |
 | subscription, plan | membership |
 | Circle (capitalised) | circle, group, list |
